@@ -1,0 +1,53 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+node_modules/
+dist/
+frontend/.vite/
+
+# Environment variables (never commit real secrets)
+.env
+
+# Allow the example file
+!.env.example
+
+# SQLite databases
+*.db
+*.db-shm
+*.db-wal
+# Raw data files: exclude large raw CSVs, but allow Parquet archives and metadata catalogs
+data/raw/*
+!data/raw/**/.gitkeep
+!data/raw/vessels/
+!data/raw/vessels/**
+!data/raw/flights/
+!data/raw/flights/**
+!data/raw/ais_historical/
+!data/raw/ais_historical/**
+!data/raw/dataco/
+!data/raw/unlocode/
+!data/raw/port_activity/
+!data/raw/port_performance/
+!data/raw/world_port_index/
+
+# Ignore raw data files larger than metadata
+*.csv
+*.zip
+*.tar.gz
+*.pdf
+
+data/processed/*
+!data/processed/.gitkeep
+
+.DS_Store
+Thumbs.db
+

@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Python virtual environments & caches
+.venv/
+**/.venv/
+venv/
+**/venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+**/.pytest_cache/
+
+# Production build outputs & caches
+.next/
+**/.next/
+out/
+build/
+dist/
+.turbo/
+**/.turbo/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local Environment variables (preserve secrets)
+.env.local
+.env.*.local
+**/.env.local
+
+# Backups
+.git_osiris_backup/
+**/.git_osiris_backup/
+
+# Large raw datasets (> 100MB blocked by GitHub)
+Datasets/IMF Daily Port Activity/*.csv
+**/Daily_Port_Activity_Data_and_Trade_Estimates.csv
+**/data/raw/port_activity/*.csv

@@ -1,0 +1,29 @@
+# Canonical factor table. Methodology page (src/pages/Methodology.tsx) references this file. Last updated 2026-05-23. License: CC BY 4.0.
+mode,vehicle_class,fuel_type,activity_unit,wtw_factor_g_co2e_per_unit,ttw_factor,wtt_factor,empty_share_default,notes,source_section
+road,heavy_truck_articulated,diesel,tonne-km,62,52,10,0.25,Long-haul motorway,GLEC v3.2 §5.1
+road,heavy_truck_articulated_short_haul,diesel,tonne-km,75,63,12,0.30,Short-haul <150km,GLEC v3.2 §5.1
+road,medium_truck,diesel,tonne-km,110,92,18,0.30,,GLEC v3.2 §5.1
+road,light_truck,diesel,tonne-km,250,210,40,0.35,,GLEC v3.2 §5.1
+road,van_electric,electric,tonne-km,80,0,80,0.35,Includes upstream grid electricity (EU mix),GLEC v3.2 §5.1
+sea,container_ship_feeder,HFO,tonne-km,12,9.6,2.4,0,<3000 TEU,GLEC v3.2 §6.1
+sea,container_ship_sub_panamax,HFO,tonne-km,9.1,7.3,1.8,0,3000-5100 TEU,GLEC v3.2 §6.1
+sea,container_ship_panamax,HFO,tonne-km,7.5,6.0,1.5,0,5100-8000 TEU,GLEC v3.2 §6.1
+sea,container_ship_post_panamax,HFO,tonne-km,5.5,4.4,1.1,0,8000-12000 TEU,GLEC v3.2 §6.1
+sea,container_ship_neo_panamax,HFO,tonne-km,4.0,3.2,0.8,0,12000-15000 TEU,GLEC v3.2 §6.1
+sea,container_ship_ulcv,HFO,tonne-km,3.0,2.4,0.6,0,>15000 TEU,GLEC v3.2 §6.1
+sea,bulk_carrier_handysize,HFO,tonne-km,6.0,4.8,1.2,0,10000-35000 dwt,GLEC v3.2 §6.2
+sea,bulk_carrier_supramax,HFO,tonne-km,5.5,4.4,1.1,0,35000-60000 dwt,GLEC v3.2 §6.2
+sea,bulk_carrier_panamax,HFO,tonne-km,4.5,3.6,0.9,0,60000-80000 dwt,GLEC v3.2 §6.2
+sea,bulk_carrier_capesize,HFO,tonne-km,3.5,2.8,0.7,0,>80000 dwt,GLEC v3.2 §6.2
+sea,tanker_aframax,HFO,tonne-km,5.0,4.0,1.0,0,80000-120000 dwt,GLEC v3.2 §6.3
+sea,tanker_suezmax,HFO,tonne-km,4.2,3.4,0.8,0,120000-200000 dwt,GLEC v3.2 §6.3
+sea,tanker_vlcc,HFO,tonne-km,3.0,2.4,0.6,0,200000-320000 dwt,GLEC v3.2 §6.3
+rail,rail_freight_diesel,diesel,tonne-km,25,22,3,0.15,,GLEC v3.2 §7.1
+rail,rail_freight_electric_eu_average,electric,tonne-km,18,0,18,0.15,EU grid mix,GLEC v3.2 §7.1
+air,air_freighter_fleet_average,jet_fuel,tonne-km,789,650,139,0,Dedicated freighter fleet-average mixed haul,GLEC v3.2 §8.1
+air,air_freighter_short_haul,jet_fuel,tonne-km,1100,900,200,0,<1500 km,GLEC v3.2 §8.1
+air,air_freighter_medium_haul,jet_fuel,tonne-km,850,700,150,0,1500-4000 km,GLEC v3.2 §8.1
+air,air_freighter_long_haul,jet_fuel,tonne-km,880,720,160,0,>4000 km,GLEC v3.2 §8.1
+air,air_belly_short_haul,jet_fuel,tonne-km,830,675,155,0,<1500 km belly,GLEC v3.2 §8.1
+air,air_belly_long_haul,jet_fuel,tonne-km,608,495,113,0,>4000 km belly,GLEC v3.2 §8.1
+air,air_dedicated_cargo_b747f,jet_fuel,tonne-km,890,730,160,0,Boeing 747-8F specific,GLEC v3.2 §8.1
